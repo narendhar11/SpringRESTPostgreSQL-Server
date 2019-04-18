@@ -38,9 +38,10 @@ public class CustomerController {
 		return customers;
 	}
 	
-	private static final Customer customer1 = new Customer("narendhar", 30, true);
+	
 	@GetMapping("/lcustomers")
 	public Customer getAllLocalCustomers() {
+		private static final Customer customer1 = new Customer("narendhar", 30, true);
 		System.out.println("Get all Customers...");
 		
 		return customer1;
