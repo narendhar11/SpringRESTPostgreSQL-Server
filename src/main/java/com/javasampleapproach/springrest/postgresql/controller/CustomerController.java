@@ -38,14 +38,14 @@ public class CustomerController {
 		return customers;
 	}
 	
-	private static final Customer customer1 = new Customer("narendhar", 30, true);
+	/*private static final Customer customer1 = new Customer("narendhar", 30, true);
 	@GetMapping("/lcustomers")
 	public List<Customer> getAllLocalCustomers() {
 		
 		System.out.println("Get all Customers...");
 		
 		return customer1;
-	}
+	}*/
 
 	@PostMapping(value = "/customers/create")
 	public Customer postCustomer(@RequestBody Customer customer) {
